@@ -1,5 +1,11 @@
-{% include 'recipies/partials/head.html' %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
 
+    {% include 'recipies/partials/head.html' %}
+    <title>{% block title %}{% endblock title %}RECEITAS</title>
+    
+</head>
 <body>
 
     {% include "recipies/partials/header.html" %}

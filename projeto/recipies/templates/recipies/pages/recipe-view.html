@@ -1,17 +1,6 @@
-{% include 'recipies/partials/head.html' %}
-
-<body>
-
-    {% include "recipies/partials/header.html" %}
-    {% include "recipies/partials/search.html" %}
-
-    <main class="main-content-container">
-        <div class="main-content main-content-detail container">
-
-            {% include "recipies/partials/recipe.html" %}
-
-        </div>
-    </main>
-    {% include "recipies/partials/footer.html" %}
-</body>
-</html>
+{% extends 'global/base.html' %}
+{% block content %}
+<div class="main-content main-content-detail container">
+    {% include 'recipies/partials/recipe.html' %}
+</div>
+{% endblock content %}
