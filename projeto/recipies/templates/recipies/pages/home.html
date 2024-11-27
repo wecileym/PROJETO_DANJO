@@ -1,28 +1,20 @@
-{% include 'recipies/partials/head.html' %}
+{% extends "global/base.html" %}
 
-<body>
+{% block content %}
+<div class="main-content main-content-list container">
 
-    {% include "recipies/partials/header.html" %}
-    {% include "recipies/partials/search.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
+    {% include "recipies/partials/recipe.html" %}
 
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-            {% include "recipies/partials/recipe.html" %}
-
-        </div>
-    </main>
-    {% include "recipies/partials/footer.html" %}
-</body>
-</html>
+</div>
+{% endblock content %} 

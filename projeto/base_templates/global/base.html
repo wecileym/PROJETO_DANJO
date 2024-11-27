@@ -1,0 +1,13 @@
+{% include 'recipies/partials/head.html' %}
+
+<body>
+
+    {% include "recipies/partials/header.html" %}
+    {% include "recipies/partials/search.html" %}
+
+    <main class="main-content-container">
+            {% block content %}{% endblock content %}        
+    </main>
+    {% include "recipies/partials/footer.html" %}
+</body>
+</html>
